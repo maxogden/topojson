@@ -20,7 +20,8 @@
     "d3-geo-projection": "0.2",
     "optimist": "0.3",
     "queue-async": "1.0",
-    "shapefile": "0.1"
+    "shapefile": "0.1",
+    "brfs": "0.0.8"
   },
   "devDependencies": {
     "vows": "0.7",
@@ -34,5 +35,8 @@
   },
   "scripts": {
     "test": "./node_modules/.bin/vows && echo"
+  },
+  "browserify": {
+    "transform": ["brfs"]
   }
 }
